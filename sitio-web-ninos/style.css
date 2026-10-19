@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+img {
+    max-width: 100;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.encabezado {
+    background-color: #ffbd69;
+    background-image: url("images/background2.png.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 7%;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #263238;
+}
+.logo span {
+    color: #7b39b8;
+}
+.menu {
+    display: flex;
+    gap: 25px;
+}
+.menu a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.menu a:hover {
+    color: #7b39b8;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0 60px;
+}
+.text-presentacion {
+    flex: 1;
+}
+.subtitulo {
+    color: #7b39b8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.texto-presentacion h1 {
+    color: white;
+    font-size: 90px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.texto-presentacion > p:not(.subtitulo) {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.imagen-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.imagen-principal img {
+    width: 100%;
+    max-width: 420px;
+    max-height: 380px;
+    object-fit: contain;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #c9f4ef;
+    color: #263238;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.boton:hover {
+    background-color: #a7e8df;
+    transform: translateY(-3px);
+}
+
+.introduccion {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+.introduccion h2 
+.modelos h2,
+.como-jugar h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.introduccion > p:last-child {
+    color: #56636a;
+    font-size: 18px;
+}
+
+.modelos {
+    background-color: #c9f4ef;
+    background-image: url("images/bg-grid.png.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 75px 7%;
+    text-align: center;
+}
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+.tarjeta {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    flex: 1 1 250px;
+    max-width: 340px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.tarjeta h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    color: #56636a;
+    margin-bottom: 20px;
+}
+.como-jugar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 7%;
+}
+.texto-juego {
+    flex: 1;
+}
+.texto-juego ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.texto-juego li {
+    margin-bottom: 12px;
+}
+.consejo {
+    background-color: #fff2dc;
+    border-left: 5px solid #ff9e3d;
+    padding: 15px;
+    border-radius: 8px;
+}
+.imagen-juego {
+    flex: 1;
+}
+.imagen-juego img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.mensaje-final {
+    background-color: #fff2dc;
+    background-image: url(images/bg-grid2.png.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    text-align: center;
+}
+.mensaje-final h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.mensaje-final p {
+    font-size: 17px;
+}
+.pie-pagina {
+    background-color: #263238;
+    color: white;
+    padding: 25px 7%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.pie-pagina a {
+    font-weight: bold;
+}
+.pie-pagina a:hover {
+    color: #ffbd69;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        padding: 20px 5%;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .texto-presentacion h1 {
+        font-size: 65px;
+    }
+    .imagen-principal img {
+        max-height: 300px;
+    }
+    .introduccion h2,
+    .modelos h2,
+    .como-jugar {
+        font-size: 29px;
+    }
+    .como-jugar {
+        flex-direction: column;
+        padding: 55px 7%;
+    }
+    .imagen-juego {
+        width: 100%;
+    }
+    .pie-pagina {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 420px) {
+    .menu {
+        gap: 10px;
+        font-size: 14px;
+    }
+    .texto-presentacion h1 {
+        font-size: 52px;
+    }
+    .texto-presentacion > p:not(.subtitulo) {
+        font-size: 17px;
+    }
+    .modelos {
+        padding: 55px 5%;
+    }
+    .tarjeta {
+        flex-basis: 100%;
+    }
+}
+
